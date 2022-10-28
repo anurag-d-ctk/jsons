@@ -1,91 +1,82 @@
-// 20221028124558
-// https://raw.githubusercontent.com/anurag-d-ctk/jsons/main/taxonomy/edit_taxonomy/1212/logs.json
-
 {
-  "results": Array[6][
-    {
-      "id": 43,
-      "action": "delete",
-      "initial_state": Array[1][
-        "installations process"
-      ],
-      "final_state": Array[0][
-        
-      ],
-      "initial_theme_category": "main_theme",
-      "final_theme_category": null,
-      "user": "",
-      "timestamp": "2022-10-25T23:18:11.007Z"
-    },
-    {
-      "id": 42,
-      "action": "delete",
-      "initial_state": Array[1][
-        "free installation"
-      ],
-      "final_state": Array[0][
-        
-      ],
-      "initial_theme_category": "main_theme",
-      "final_theme_category": null,
-      "user": "",
-      "timestamp": "2022-10-25T23:18:11.007Z"
-    },
-    {
-      "id": 38,
-      "action": "add",
-      "initial_state": Array[0][
-        
-      ],
-      "final_state": Array[1][
-        "Ganesha"
-      ],
-      "initial_theme_category": null,
-      "final_theme_category": "main_theme",
-      "user": "",
-      "timestamp": "2022-10-25T23:18:11.007Z"
-    },
-    {
-      "id": 37,
-      "action": "move",
-      "initial_state": Array[1][
-        "return and refund"
-      ],
-      "final_state": Array[1][
-        "feature"
-      ],
-      "initial_theme_category": "main_theme",
-      "final_theme_category": "main_theme",
-      "user": "",
-      "timestamp": "2022-10-25T23:18:11.007Z"
-    },
-    {
-      "id": 36,
-      "action": "move",
-      "initial_state": Array[1][
-        "replacement"
-      ],
-      "final_state": Array[1][
-        "feature"
-      ],
-      "initial_theme_category": "main_theme",
-      "final_theme_category": "main_theme",
-      "user": "",
-      "timestamp": "2022-10-25T23:18:11.007Z"
-    },
-    {
-      "id": 35,
-      "action": "move",
-      "initial_state": Array[1][
-        "sound"
-      ],
-      "final_state": Array[1][
-        "feature"
-      ],
-      "initial_theme_category": "main_theme",
-      "final_theme_category": "main_theme",
-      "user": "",
-      "timestamp": "2022-10-25T23:18:11.007Z"
-    }
-  ]
+    "results": [
+        {
+            "id": 43,
+            "action": "delete",
+            "initial_state": [
+                "installations process"
+            ],
+            "final_state": [],
+            "initial_theme_category": "main_theme",
+            "final_theme_category": null,
+            "user": "",
+            "timestamp": "2022-10-25T23:18:11.007Z"
+        },
+        {
+            "id": 42,
+            "action": "delete",
+            "initial_state": [
+                "free installation"
+            ],
+            "final_state": [],
+            "initial_theme_category": "main_theme",
+            "final_theme_category": null,
+            "user": "",
+            "timestamp": "2022-10-25T23:18:11.007Z"
+        },
+        {
+            "id": 38,
+            "action": "add",
+            "initial_state": [],
+            "final_state": [
+                "Ganesha"
+            ],
+            "initial_theme_category": null,
+            "final_theme_category": "main_theme",
+            "user": "",
+            "timestamp": "2022-10-25T23:18:11.007Z"
+        },
+        {
+            "id": 37,
+            "action": "move",
+            "initial_state": [
+                "return and refund"
+            ],
+            "final_state": [
+                "feature"
+            ],
+            "initial_theme_category": "main_theme",
+            "final_theme_category": "main_theme",
+            "user": "",
+            "timestamp": "2022-10-25T23:18:11.007Z"
+        },
+        {
+            "id": 36,
+            "action": "move",
+            "initial_state": [
+                "replacement"
+            ],
+            "final_state": [
+                "feature"
+            ],
+            "initial_theme_category": "main_theme",
+            "final_theme_category": "main_theme",
+            "user": "",
+            "timestamp": "2022-10-25T23:18:11.007Z"
+        },
+        {
+            "id": 35,
+            "action": "move",
+            "initial_state": [
+                "sound"
+            ],
+            "final_state": [
+                "feature"
+            ],
+            "initial_theme_category": "main_theme",
+            "final_theme_category": "main_theme",
+            "user": "",
+            "timestamp": "2022-10-25T23:18:11.007Z"
+        }
+    ]
 }
