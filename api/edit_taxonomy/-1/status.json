@@ -1,0 +1,19 @@
+{
+  "is_edit_allowed": true,
+  "is_refresh_in_progress": false,
+  "last_processing_time": null,
+  "is_refresh_insights_required": false,
+  "refresh_insight_status": {
+    "task_list": [
+      "sync data",
+      "recalculating scores",
+      "preparing data",
+      "building visualization",
+      "completed",
+      "update taxonomy"
+    ],
+    "current_task_in_progress_index": 0,
+    "time_elapsed": 1115304.55999,
+    "current_task_in_progress": "sync data"
+  }
+}
