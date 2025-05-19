@@ -1,0 +1,30 @@
+name: Run util.js Tests
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Jest and append report to test_report.txt
+        run: |
+          npx jest util.test.js --ci --reporters=default --outputFile=jest_output.txt || true
+          if [ -f test_report.txt ]; then
+            echo "\n--- New Test Run: $(date) ---\n" >> test_report.txt
+            cat jest_output.txt >> test_report.txt
+          else
+            echo "--- New Test Run: $(date) ---\n" > test_report.txt
+            cat jest_output.txt >> test_report.txt
+          fi 
