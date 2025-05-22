@@ -25,15 +25,9 @@ jobs:
       - name: Run build
         run: npm run build
 
-      - name: Move build output
-        run: |
-          rm -rf build
-          mkdir -p build
-          if [ -d dist ] && [ "$(ls -A dist)" ]; then cp -r dist/* build/; fi
-
       - name: Commit and push build
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'chore: add build output'
           branch: main
-          file_pattern: build/*
+          file_pattern: dist/**

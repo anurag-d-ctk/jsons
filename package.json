@@ -5,6 +5,6 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "tsc util.ts"
+    "build": "tsc"
   }
 } 
