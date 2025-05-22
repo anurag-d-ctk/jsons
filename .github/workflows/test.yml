@@ -18,13 +18,5 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Jest and append report to test_report.txt
-        run: |
-          npx jest util.test.js --ci --reporters=default --outputFile=jest_output.txt || true
-          if [ -f test_report.txt ]; then
-            echo "\n--- New Test Run: $(date) ---\n" >> test_report.txt
-            cat jest_output.txt >> test_report.txt
-          else
-            echo "--- New Test Run: $(date) ---\n" > test_report.txt
-            cat jest_output.txt >> test_report.txt
-          fi 
+      - name: Run tests
+        run: npm run test 
