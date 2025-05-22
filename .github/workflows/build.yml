@@ -29,7 +29,7 @@ jobs:
         run: |
           rm -rf build
           mkdir -p build
-          cp -r dist/* build/
+          if [ -d dist ] && [ "$(ls -A dist)" ]; then cp -r dist/* build/; fi
 
       - name: Commit and push build
         uses: stefanzweifel/git-auto-commit-action@v5
